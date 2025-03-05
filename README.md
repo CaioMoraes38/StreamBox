@@ -1,50 +1,55 @@
-# Welcome to your Expo app 👋
+🎬 StreamBox
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Um app de catálogo de filmes feito com React Native e Expo, usando a API do TMDb para buscar e exibir filmes. 🍿
 
-## Get started
+🚀 Funcionalidades
 
-1. Install dependencies
+Listar filmes populares
 
-   ```bash
-   npm install
-   ```
+Buscar filmes por nome
 
-2. Start the app
+Ver detalhes do filme
 
-   ```bash
-    npx expo start
-   ```
+Favoritar filmes
 
-In the output, you'll find options to open the app in a
+🛠️ Tecnologias Utilizadas
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+React Native: Framework para desenvolvimento de aplicativos móveis.
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+Expo: Plataforma para simplificar a criação e execução de apps React Native.
 
-## Get a fresh project
+Expo Router: Gerenciamento de rotas com uma abordagem similar ao React Router.
 
-When you're ready, run:
+TMDb API: API de filmes e séries para obter dados detalhados de produções.
 
-```bash
-npm run reset-project
-```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
 
-## Learn more
+🛠️ Configuração
 
-To learn more about developing your project with Expo, look at the following resources:
+Instalar dependências:
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+npm install
 
-## Join the community
+Configurar a API:
+Crie um arquivo .env:
 
-Join our community of developers creating universal apps.
+TMDB_API_KEY=SEU_TOKEN_DE_ACESSO
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Adicione ao .gitignore para segurança.
+
+Iniciar o projeto:
+
+npm start
+
+📘 Navegação
+
+O app usa o Expo Router para organizar as telas:
+
+/index.tsx → Página inicial com os filmes populares.
+
+/search.tsx → Tela de busca.
+
+/favorites.tsx → Lista de filmes favoritados.
+
+
+
